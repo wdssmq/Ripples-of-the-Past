@@ -124,7 +124,8 @@ public class TimeStop extends StandAction {
 
     @Override
     public int getHoldDurationToFire(IStandPower power) { 
-        return TimeUtil.isTimeStopped(power.getUser().level, power.getUser().blockPosition()) ? 0 : super.getHoldDurationToFire(power);
+        return TimeUtil.isTimeStopped(power.getUser().level, power.getUser().blockPosition()) ? 0 : 20;
+        // return TimeUtil.isTimeStopped(power.getUser().level, power.getUser().blockPosition()) ? 0 : super.getHoldDurationToFire(power);
     }
 
     @Override
