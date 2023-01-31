@@ -3,3 +3,9 @@ A Minecraft mod based on JoJo's Bizarre Adventure series.
 ## External links
 [CurseForge page](https://www.curseforge.com/minecraft/mc-mods/ripples-of-the-past)  
 [Discord server](https://discord.gg/4GcjnMnXP4)
+
+## Just Note
+
+Ripples-of-the-Past/src/main/java/com/github/standobyte/jojo/init/ModActions.java
+
+`new StandAction.Builder().holdToFire`
