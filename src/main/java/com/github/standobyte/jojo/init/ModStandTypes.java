@@ -60,7 +60,7 @@ public class ModStandTypes {
                     .timeStopMaxTicks(100, 180)
                     .timeStopLearningPerTick(0.25F)
                     .timeStopDecayPerDay(0F)
-                    .timeStopCooldownPerTick(3F)
+                    .timeStopCooldownPerTick(2F)
                     .build("Star Platinum"), 
                     ModEntityTypes.STAR_PLATINUM)
             .addSummonShout(ModSounds.JOTARO_STAR_PLATINUM)
@@ -87,7 +87,7 @@ public class ModStandTypes {
                     .timeStopMaxTicks(100, 180)
                     .timeStopLearningPerTick(0.1F)
                     .timeStopDecayPerDay(0F)
-                    .timeStopCooldownPerTick(3F)
+                    .timeStopCooldownPerTick(2F)
                     .build("The World"), 
                     ModEntityTypes.THE_WORLD)
             .addSummonShout(ModSounds.DIO_THE_WORLD)
