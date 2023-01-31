@@ -43,4 +43,4 @@ jobs:
         with:
           name: Build ${{ env.TAG }}
           body: Build ${{ env.TAG }} Release.
-          files: build/libs/${{ env.JAR_NAME}}-${TAG}.jar
+          files: build/libs/${{ env.JAR_NAME}}-${{ env.TAG }}.jar
