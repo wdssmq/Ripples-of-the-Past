@@ -73,7 +73,7 @@ public class TimeStopperStandStats extends StandStats {
         private int timeStopMaxTicksVampire = 180;
         private float timeStopLearningPerTick = 0.1F;
         private float timeStopDecayPerDay = 0;
-        private float timeStopCooldownPerTick = 3;
+        private float timeStopCooldownPerTick = 2;
         
         public Builder timeStopMaxTicks(int forHuman, int forVampire) {
             forHuman = Math.max(TimeStop.MIN_TIME_STOP_TICKS, forHuman);
