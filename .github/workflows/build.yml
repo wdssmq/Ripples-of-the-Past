@@ -21,3 +21,22 @@ jobs:
         run: |
           ./gradlew build
           ls build/libs
+      # Get Tag For Release
+      - name: Get Tag
+        id: get_tag
+        env:
+          REF: ${{ github.ref }} # e.g. refs/tags/v1.0.0
+        run: |
+          # TAG=${REF/refs\/tags\/v}
+          TAG=0.2.7
+          echo "tag=${TAG}" >> $GITHUB_OUTPUT
+      # Publish Release
+      - name: Publish Release
+        id: release
+        uses: softprops/action-gh-release@v1
+        env:
+          TAG: ${{ steps.get_tag.outputs.tag }} # 获取上一步截取到的版本号，既 1.0.0
+        with:
+          name: Build ${{ env.TAG }}
+          body: Build ${{ env.TAG }} Release.
+          files: build/libs/JJBA-RipplesOfThePast-1.16.5-${{ env.TAG }}.jar
