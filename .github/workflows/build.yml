@@ -33,7 +33,7 @@ jobs:
         run: |
           TAG=${REF/refs\/tags\/v}
           echo "tag=${TAG}" >> $GITHUB_OUTPUT
-          mv build/libs/${{ env.JAR_NAME}}-*.jar build/libs/${{ env.JAR_NAME}}-${TAG}.jar 
+          # mv build/libs/${{ env.JAR_NAME}}-*.jar build/libs/${{ env.JAR_NAME}}-${TAG}.jar 
       # Publish Release
       - name: Publish Release
         id: release
