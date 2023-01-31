@@ -20,4 +20,4 @@ jobs:
       - name: Run build with Gradle Wrapper
         run: |
           ./gradlew build
-          ls
+          ls build/libs
